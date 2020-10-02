@@ -1,0 +1,7 @@
+void print_one_int(int n)
+
+int main()
+{
+  print_one_int(100);
+  return 0;
+}

@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+char    *ft_strlowcase(char *str);
+
+int main(){
+  char s[] = "hogela HOGELA";
+  ft_strlowcase(s);
+ printf(s);
+  return 0;
+}

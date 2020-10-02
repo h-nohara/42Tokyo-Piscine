@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <string.h>
+
+char *ft_strstr(char *str, char *to_find);
+
+int main()
+{
+  char s1[] = "hogehoge";
+  char s2[] = "e ";
+  printf("%s\n", ft_strstr(s1, s2));
+  printf("%s\n", strstr(s1, s2));
+  return 0;
+}

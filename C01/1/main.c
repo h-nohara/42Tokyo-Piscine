@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+void    ft_sort_int_tab(int *tab, int size);
+
+int main(){
+  int i = 0;
+  int s[] = {5, 4, 3, 2, 1, 1, 2, 3, 4, 5};
+  ft_sort_int_tab(s, 10);
+  while (i < 10){
+    printf("%d", s[i]);
+    i++;
+  }
+}
