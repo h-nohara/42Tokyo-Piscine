@@ -1,0 +1,5 @@
+Credentials cache: API:C7004EA1-4DB9-4849-B13B-60BAAB1AB514
+        Principal: hnohara@42TOKYO.JP
+
+  Issued                Expires               Principal
+Sep 10 14:19:39 2020  Sep 11 00:19:39 2020  krbtgt/42TOKYO.JP@42TOKYO.JP

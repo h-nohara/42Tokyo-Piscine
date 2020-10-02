@@ -1,0 +1,97 @@
+= ex00 =========================================================================
+$> diff -U 3 z ref_output | cat -e
+
+Diff OK :D
+Grade: 5
+
+= ex01 =========================================================================
+Grade: 5
+
+= ex02 =========================================================================
+Grade: 10
+
+= ex03 =========================================================================
+Grade: 10
+
+= ex04 =========================================================================
+$> sh ./test_midls.sh
+./test_midls.sh: line 4: sleep: command not found
+./test_midls.sh: line 6: sleep: command not found
+./test_midls.sh: line 8: sleep: command not found
+./test_midls.sh: line 10: sleep: command not found
+./test_midls.sh: line 12: sleep: command not found
+./test_midls.sh: line 14: sleep: command not found
+./test_midls.sh: line 16: sleep: command not found
+./test_midls.sh: line 18: sleep: command not found
+./test_midls.sh: line 20: sleep: command not found
+./test_midls.sh: line 29: sleep: command not found
+< our file, > your file
+ok
+
+Grade: 10
+
+= ex05 =========================================================================
+$> diff -U 3 user_output test_output | cat -e
+
+Diff OK :D
+OK
+Grade: 10
+
+= ex06 =========================================================================
+$> diff -U 3 user_output test_output | cat -e
+--- user_output 2020-09-15 13:28:51.000000000 +0000$
++++ test_output 2020-09-15 13:28:51.000000000 +0000$
+@@ -1,6 +1,6 @@$
+-fYrJgZsJItUwOKyoyo.test$
+ .OGdhEZmXWOohwU.nop.test$
+  ddmBxeGsVOlCtoto.dylib$
+   fYrJgZsJItUwOKyoyo.test$
+   -.OGdhEZmXWOohwU.nop.test$
+   -ddmBxeGsVOlCtoto.dylib$
+   +hyeMOTLrDi/.OGdhEZmXWOohwU.nop.test$
+   +hyeMOTLrDi/ddmBxeGsVOlCtoto.dylib$
+   +hyeMOTLrDi/fYrJgZsJItUwOKyoyo.test$
+
+   Diff KO :(
+   KO
+   Grade: 0
+
+   = ex07 =========================================================================
+   $> diff -U 3 b 42b | cat -e
+
+   Diff OK :D
+   Grade: 10
+
+   = ex08 =========================================================================
+   $> sh ./test_clean.sh
+   ./test/.7~
+   ./test/test/#2#
+   ./test/test/titi/4~
+   ./test/test/titi/#4#
+   ./test/test/2~
+   ./test/#1#
+   ./test/titi/3~
+   ./test/titi/test/#5#
+   ./test/titi/test/5~
+   ./test/titi/#3#
+   ./test/1~
+   ok
+
+   Grade: 15
+
+   = ex09 =========================================================================
+   $> sh ./test_magic.sh
+   -n testing ft_magic 1/2 ...
+   /usr/share/file/magic, 0: Warning: using regular magic file `correct_magic'
+   /usr/share/file/magic, 0: Warning: using regular magic file `./ft_magic'
+   < our file, > your file
+   1c1
+   < test42: 42 file$
+   ---
+   > test42: 42 File Type$
+   [KO]
+
+   Grade: 0
+
+   = Final grade: 50 ==============================================================
+   
